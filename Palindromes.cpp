@@ -6,7 +6,7 @@ using namespace std;
 bool findpalindrome(string str)
 {
 	//To avoid checking for case sensitive all the charecters are coverted to upper charecter  
-	transform(str.begin(), str.end(), str.begin(), toupper);
+	transform(str.begin(), str.end(), str.begin(), ::toupper);
 
 	string first = str;				//Collecting the initial string value
 	reverse(str.begin(), str.end());	//Reversing the string
